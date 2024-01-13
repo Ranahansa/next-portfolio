@@ -30,7 +30,7 @@ const HeroContent = () => {
                     <span>
                         Providing 
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> The Best </span>
-                        Project Expreience
+                        Project Exprience
                     </span>
                 </motion.div>
                 <motion.p

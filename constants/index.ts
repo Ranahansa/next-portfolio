@@ -81,16 +81,19 @@ export const Skill_data = [
 
 export const Socials = [
     {
-        name: "Discord",
-        src: "/instagram.svg",
+        name: "Github",
+        src: "/icons8-github.svg",
+        link: "https://github.com/Ranahansa",
     },
     {
-        name: "Facebook",
-        src: "/facebook.svg",
+        name: "Blog",
+        src: "/icons8-blog.svg",
+        link: "https://thesevendigitaldiary.blogspot.com/",
     },
     {
-        name: "Instagram",
-        src: "/discord.svg",
+        name: "Linkedin",
+        src: "/icons8-linkedin.svg",
+        link: "https://www.linkedin.com/in/pathum-ranahansa-6a8966253/",
     },
 ];
 

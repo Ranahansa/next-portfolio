@@ -10,8 +10,8 @@ const Projects = () => {
             <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10'>
 
                     <ProjectCrad 
-                    src="/NextWebsite.png" 
-                    title="Modern Next.js Portfolio" 
+                    src="/4.png" 
+                    title="Modern AI chatbot Next.js " 
                     description="Project 1 description"/>
 
                     <ProjectCrad 

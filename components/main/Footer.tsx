@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from "react";
+import Link from "next/link";
 import {
     RxDiscordLogo,
     RxGithubLogo,
@@ -8,8 +8,7 @@ import {
     RxLinkedinLogo,
 } from "react-icons/rx";
 
-import {FaYoutube} from "react-icons/fa"
-import Link from 'next/link';
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -45,10 +44,12 @@ const Footer = () => {
                             <RxTwitterLogo />
                             <span className="text-[15px] ml-[6px]">Twitter</span>
                         </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <RxLinkedinLogo />
-                            <span className="text-[15px] ml-[6px]">Linkedin</span>
-                        </p>
+                        <Link href="https://www.linkedin.com/in/pathumranah-nasa/">
+                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                                <RxLinkedinLogo />
+                                <span className="text-[15px] ml-[6px]">Linkedin</span>
+                            </p>
+                        </Link>
                     </div>
 
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -59,22 +60,23 @@ const Footer = () => {
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <span className="text-[15px] ml-[6px]">Learning about me</span>
                         </p>
-                        <a href="mailto:pathumranahansa7777@gmail.com">
-                            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                                <span className="text-[15px] ml-[6px]">
-                                    pathumranahansa7777@gmail.com
-                                </span>
-                            </p>
-                        </a>
+                        <Link
+                            href="mailto:pathumranahansa7777@gmail.com"
+                            className="flex flex-row items-center my-15 cursor-pointer"
+                        >
+                            <span className="text-15 ml-6">
+                                pathumranahansa7777@gmail.com
+                            </span>
+                        </Link>
                     </div>
                 </div>
 
-                <div className="mb-[20px] text-[15px] text-center">
+                <div className="mb-[20px] text-[15px] text-center pt-12 pr-12">
                     &copy; Ranahansa 2024 Inc. All rights reserved
                 </div>
             </div>
         </div>
     );
-}
+};
 
-export default Footer
+export default Footer;

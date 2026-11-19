@@ -1,12 +1,12 @@
 export const Skill_data = [
   {
-    skill_name: "vite",
-    Image: "/vite.png",
+    skill_name: "Vite",
+    Image: "/Vite.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Css",
+    skill_name: "React Bootstrap",
     Image: "/React Bootstrap.png",
     width: 80,
     height: 80,
@@ -42,13 +42,13 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Type Script",
+    skill_name: "TypeScript",
     Image: "/ts.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Next js 13",
+    skill_name: "Next js",
     Image: "/next.png",
     width: 80,
     height: 80,
@@ -60,19 +60,19 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Sass CSS",
+    skill_name: "npm",
     Image: "/npm.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Node js",
+    skill_name: "Git",
     Image: "/git.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Git",
+    skill_name: "Vercel",
     Image: "/logo.png",
     width: 80,
     height: 80,
@@ -147,7 +147,7 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Recat Native",
+    skill_name: "React Native",
     Image: "/Rn.png",
     width: 80,
     height: 80,
@@ -186,7 +186,7 @@ export const Backend_skill = [
     height: 55,
   },
   {
-    skill_name: "Postger SQL",
+    skill_name: "PostgreSQL",
     Image: "/postger.png",
     width: 70,
     height: 70,
@@ -213,7 +213,7 @@ export const Backend_skill = [
 
 export const Full_stack = [
     {
-        skill_name: "JAva Script",
+        skill_name: "JavaScript",
         Image: "/js.png",
         width: 70,
         height: 70,

@@ -6,11 +6,14 @@ import Image from 'next/image'
 
 const Encryption = () => {
     return (
-        <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
-            <div className="absolute w-auto h-auto top-0 z-[5]">
+        <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full overflow-hidden">
+            <div className="absolute w-auto h-auto top-0 z-[5] px-4">
                 <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
                     variants={slideInFromTop}
-                    className="text-[43px] font-medium text-center text-gray-200"
+                    className="text-3xl sm:text-[43px] font-medium text-center text-gray-200"
                 >
                     Performance
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -49,17 +52,16 @@ const Encryption = () => {
                 </div>
             </div>
 
-            <div className="w-full flex items-start justify-center absolute">
+            <div className="w-full h-full absolute inset-0 flex items-start justify-center pointer-events-none">
                 <video
                     loop
                     muted
                     autoPlay
                     playsInline
-                    preload="false"
-                    className="w-full h-auto"
+                    preload="none"
+                    className="w-full h-full object-cover"
                     src="/encryption.webm"
                 />
-                d
             </div>
         </div>
     );

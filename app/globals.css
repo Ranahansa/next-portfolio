@@ -4,7 +4,7 @@
 
 
 .cursive {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: var(--font-cursive), "Cedarville Cursive", cursive;
 }
 
 .Welcome-text {
@@ -64,4 +64,20 @@
 
 html {
     scroll-behavior: smooth;
+    /* keep anchored sections from hiding under the fixed navbar */
+    scroll-padding-top: 65px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }

@@ -1,3 +1,5 @@
+const ease = [0.22, 1, 0.36, 1] as const;
+
 export function slideInFromLeft(delay: number) {
     return {
         hidden: { x: -100, opacity: 0 },
@@ -6,7 +8,8 @@ export function slideInFromLeft(delay: number) {
             opacity: 1,
             transition: {
                 delay: delay,
-                duration: 0.5,
+                duration: 0.6,
+                ease,
             },
         },
     };
@@ -20,7 +23,8 @@ export function slideInFromRight(delay: number) {
             opacity: 1,
             transition: {
                 delay: delay,
-                duration: 0.5,
+                duration: 0.6,
+                ease,
             },
         },
     };
@@ -32,8 +36,20 @@ export const slideInFromTop = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.5,
-            duration: 0.5,
+            delay: 0.3,
+            duration: 0.6,
+            ease,
         },
     },
 };
+
+export function fadeInUp(delay = 0) {
+    return {
+        hidden: { y: 40, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: { delay, duration: 0.6, ease },
+        },
+    };
+}
